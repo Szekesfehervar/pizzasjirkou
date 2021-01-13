@@ -9,8 +9,8 @@ const IngredientsDisplayPizza = props => {
         <div>
             <h1>{props.name}</h1>
             <h2>{props.category}</h2>
-            <button>Objednej</button>
-           
+            <button onClick={e => {props.AddIng({name:props.name, category:props.category})}}>Objednej</button>
+            
         </div>
     );
 

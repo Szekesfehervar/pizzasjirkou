@@ -4,14 +4,10 @@ import AddIngredient from "../components/addingredient";
 import IngredientsDisplay from "../components/ingredientsDisplay";
 
 
-
-
-
 const Ingredients = () => {
     
-    
+    {
     const [ingredients, setIngredients] = useContext(IngredientsContext);
-
     return(<div>
        
             
@@ -20,6 +16,6 @@ const Ingredients = () => {
         <AddIngredient/>
         </div>
         );
-    
+    }
 }
 export default Ingredients;

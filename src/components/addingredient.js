@@ -20,7 +20,6 @@ import  {IngredientsContext} from './ingredientsProvider';
     }
     
     
-    
     return(
         <form onSubmit={addIngredient}>
             <input type="text" name="name" value={name} onChange={updateName}/>
