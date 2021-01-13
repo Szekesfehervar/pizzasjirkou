@@ -1,22 +1,16 @@
 import React,{useContext, useState} from 'react';
 import {IngredientsContext} from "../components/ingredientsProvider";
+import IngredientsDisplay from "../components/ingredientsDisplayPizza";
 
 
 const Pizza = () => {
-  const value = useContext(IngredientsContext)
+  const [ingredients, setIngredients] = useContext(IngredientsContext);
+  const [pizzaing, setPizzaIng] = useState("");
     return (
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '100px',
-          margin:'50px'
-        }}
-      >
+      <div>
         <h1>Pizza</h1>
-        <br/>
-      
+          {ingredients.map(m =>(<IngredientsDisplay name={m.name} category={m.category}></IngredientsDisplay>))}
+          
         
         
       </div>
