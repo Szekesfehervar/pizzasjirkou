@@ -4,8 +4,6 @@ import {
   NavLink,
   Bars,
   NavMenu,
-  NavBtn,
-  NavBtnLink
 } from './navbar';
 
 const Navbar = () => {
@@ -14,11 +12,17 @@ const Navbar = () => {
         <Nav>
           <Bars />
           <NavMenu>
-            <NavLink to='/pizza' activeStyle>
+          <NavLink to='/' exact activeStyle>
+              Home
+            </NavLink>
+            <NavLink to='/order/pizza' activeStyle>
               Pizza
             </NavLink>
-            <NavLink to='/calzone' activeStyle>
+            <NavLink to='/order/calzone' activeStyle>
               Calzone
+            </NavLink>
+            <NavLink to = '/ingredients' activeStyle>
+              Ingredinets
             </NavLink>
           </NavMenu>
         </Nav>
