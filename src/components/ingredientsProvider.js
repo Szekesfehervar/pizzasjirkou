@@ -9,18 +9,18 @@ export const IngredientsContext = createContext();
 export const IngredientsProvider = props => {
     const[ingredients, setingredients] = useState([
         {
-            name:"Vepřové maso",
-            category:"maso",
+            name:"Pork chop",
+            category:"meat",
             id:1
         },
         {
-            name:"Kuřecí maso",
-            category:"maso",
+            name:"Tomatoes",
+            category:"vegetables",
             id:2
         },
         {
-            name:"Hovězí maso",
-            category:"maso",
+            name:"Not an ananas",
+            category:"fruit",
             id:3
         }
     ]);

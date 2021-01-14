@@ -11,8 +11,10 @@ const Ingredients = () => {
     return(<div>
        
             
-        <h1> Mrdka</h1>
+        <h1> Ingredients</h1>
         {ingredients.map(m =>(<IngredientsDisplay name={m.name} category={m.category}></IngredientsDisplay>))}
+        
+        <h2>Add ingredient</h2>
         <AddIngredient/>
         </div>
         );
